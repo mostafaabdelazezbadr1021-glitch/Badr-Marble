@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badr Marble | products</title>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <header class="premium-header">
+        <div class="brand-box">
+            <a href="index.html" class="logo-link" style="text-decoration: none; color: inherit;">
+            <div class="brand-logo">BADR <span>GROUP</span></div>
+            <div class="brand-subtitle" id="brand-sub">LUXURY MARBLE & GRANITE</div></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" id="nav-home">الرئيسية</a></li>
+                <li><a style="display: none;" href="products.html" class="nav-link active" id="nav-products">المنتجات</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-left-wrapper">
+            <div class="products-counter-badge">
+                <span id="badge-text">المختارات:</span> <span id="count-badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="products-container-section">
+        <div class="section-header">
+            <span class="sub-title" id="page-sub-title">المعرض الحصري</span>
+            <h1 class="main-title"><span id="page-main-title">تشكيلة الرخام والجرانيت</span></h1>
+        </div>
+        
+        <div class="products-luxury-grid">
+            <div class="luxury-product-card" data-code="A11" data-name-ar=" كلاكتا كوارتز ذهبى" data-name-en=" Calacatta Gold Quartz">
+                <div class="card-img-holder">
+                    <picture>
+                        <source srcset="Calacatta Gold Quartz.jpg" type="image/avif">
+                        <img src="Calacatta Gold Quartz.jpg" alt="Marble" loading="lazy">
+                    </picture>
+                    <span class="product-code-tag">A11</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="p-name"> كلاكتا كوارتز ذهبى</h3>
+                    <button class="action-select-btn" onclick="toggleProductSelection('A11', this)">اختيار المنتج</button>
+                </div>
+            </div>
+
+            <div class="luxury-product-card" data-code="B11" data-name-ar="جرانيت أسود أسواني" data-name-en="Aswan Black Granite">
+                <div class="card-img-holder">
+                    <picture>
+                        <source srcset="Granite.jpg" type="image/avif">
+                        <img src="Granite.jpg" alt="Granite" loading="lazy">
+                    </picture>
+                    <span class="product-code-tag">B11</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="p-name">جرانيت أسود أسواني</h3>
+                    <button class="action-select-btn" onclick="toggleProductSelection('B11', this)">اختيار المنتج</button>
+                </div>
+            </div>
+            
+            <div class="luxury-product-card" data-code="C12" data-name-ar="ميلي جراي 214" data-name-en="Miley Gray 214">
+                <div class="card-img-holder">
+                    <picture>
+                        <source srcset="Miley Gray 214.jpg" type="image/avif">
+                        <img src="Miley Gray 214.jpg" alt="Marble" loading="lazy">
+                    </picture>
+                    <span class="product-code-tag">C12</span>
+                </div>
+                <div class="card-details">
+                    <h3 class="p-name">ميلي جراي 214</h3>
+                    <button class="action-select-btn" onclick="toggleProductSelection('C12', this)">اختيار المنتج</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="premium-sticky-bar" id="stickyBar">
+        <div class="sticky-bar-info">
+            <i class="primary-gold"></i> <span id="bar-text">تم تحديد منتجات للاستفسار عنها.</span>
+        </div>
+        <button class="redirect-quote-btn" onclick="sendDataToMainPage()" id="bar-btn">تأكيد ونقل إلى طلب التسعيرة ←</button>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
